@@ -31,13 +31,34 @@ body {
         font-size: 3%; /* Adjust font size for screens with a width up to 480px */
     }
 }
-
-
+/* Style the contact links as buttons */
 .contact-links {
-    flex: 1;
-    border: 1px solid transparent;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.contact-links a {
+    font-size: 14px;
+    font:inset 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a small internal shadow */
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed for spacing */
+    margin: 0 10px; /* Add margin for spacing between buttons */
+    background-color: #0056b3; /* Your desired button background color */
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border: none; /* Remove button border if desired */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+
+/* Add a hover effect for the buttons */
+.contact-links a:hover {
+    background-color: #003f80; /* Darker color on hover */
+}
+
+
+
 
 .contact {
     flex: 1;
@@ -68,8 +89,12 @@ body {
     background-color: #fff;
 }
 .skill-bar:hover {
-    transform: scale(1.5) translate(5%, -10%);
+    transform: scale(1.5) translate(-20%, -10%);
     transition: transform 0.3s;
+    
+}
+.skill-bar:hover + .skill-fill:hover {
+    background-color: #1a01ba;
 }
 
 .title {
