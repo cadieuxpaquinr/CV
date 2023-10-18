@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
 }
 
 .container {
@@ -93,7 +94,6 @@ body {
     transform: scale(1.5) translate(-20%, -10%);
     transition: transform 0.3s;
     background-color: #000000;
-    
 }
 .skill-bar:hover .skill-fill {
     background-color: #2100f8; /* Change this to your desired color */
@@ -170,7 +170,7 @@ body {
 .certifications {
     display: block;
     border: 0px solid #fff;
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #000000;
     padding: 10px;
     text-align: left;
@@ -185,11 +185,29 @@ body {
 }
 .certifications:hover, .link-container:hover a {
     transition: background-color 0.4s;
-    background-color: #0056b3;
+    background-color: #01244a;
     color: #ffffff;
 
 }
 
+.certifications:hover .g {
+    color: #4285f4;
+}
+.certifications  .g,.o1,.o2,.l,.e{
+    display: inline; /* or display: inline-block; */
+}
+.certifications:hover .o1 {
+    color: #ea4335;
+}
+.certifications:hover .o2 {
+    color: #fbbc05;
+}
+.certifications:hover .l {
+    color: #34a853;
+}
+.certifications:hover .e {
+    color: #ea4335;
+}
 
 /* .link-container {
     display: block; /* Make the entire container clickable */
