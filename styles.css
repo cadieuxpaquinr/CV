@@ -16,6 +16,7 @@ body {
 }
 .name {
     flex: 1;
+    text-align: center;
     border: 1px solid transparent;
     font-size: 5%; /* Default font size as a percentage */
 }
