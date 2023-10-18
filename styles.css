@@ -121,7 +121,7 @@ body {
     width: 100%; /* Set the table width to 100% of its container */
     border-collapse: collapse; /* Remove space between table cells */
 }
-.experience-table td {
+.experience-table th, td {
     width:150px;
     border: none; /* Remove borders from table cells */
     padding: 1px; /* Add padding to table cells for spacing */
