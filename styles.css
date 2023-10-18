@@ -128,3 +128,18 @@ body {
     padding: 1px; /* Add padding to table cells for spacing */
     text-align: left;
 }
+
+.link-container {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.link-container:hover {
+    background-color: #0056b3;
+}
