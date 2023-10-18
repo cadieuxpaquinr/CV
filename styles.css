@@ -91,11 +91,14 @@ body {
 .skill-bar:hover {
     transform: scale(1.5) translate(-20%, -10%);
     transition: transform 0.3s;
+    background-color: #000000;
     
 }
-.skill-bar:hover + .skill-fill:hover {
-    background-color: #1a01ba;
+.skill-bar:hover .skill-fill {
+    background-color: #2100f8; /* Change this to your desired color */
 }
+
+
 
 .title {
     font-weight: bold;
@@ -128,7 +131,7 @@ body {
 }
 
 .skill-bar {
-    background-color: #f0f0f0;
+    background-color: #e2e2e2;
     border: 1px solid transparent;
     width: 150px;
     display: flex;
