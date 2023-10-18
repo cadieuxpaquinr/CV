@@ -112,6 +112,7 @@ body {
 }
 
 .education-table td {
+    width:150px;
     border: none; /* Remove borders from table cells */
     padding: 1px; /* Add padding to table cells for spacing */
 }
