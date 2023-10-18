@@ -82,6 +82,7 @@ body {
 .subsection {
     border: 1px solid transparent;
     padding: 10px;
+    border-radius: 25px;
 }
 
 .sub-title {
