@@ -53,15 +53,22 @@ body {
 .skills {
     margin: 20px 0;
     border: 1px solid transparent;
+    border-radius: 25px;
     padding: 10px;
 }
 
 .education:hover,
-.certifications:hover,
 .experience:hover,
-.subsection:hover,
-.skill-bar:hover {
+.subsection:hover {
     transform: scale(1.1) translate(5%, -10%);
+    transition: transform 0.3s;
+    /* transition: border 1s; */
+    border-color: #000000;
+    /* border: 4px solid black; */
+    background-color: #fff;
+}
+.skill-bar:hover {
+    transform: scale(1.5) translate(5%, -10%);
     transition: transform 0.3s;
 }
 
@@ -86,6 +93,7 @@ body {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    
 }
 
 .skill-name {
@@ -129,17 +137,44 @@ body {
     text-align: left;
 }
 
-.link-container {
-    display: inline-block;
+.certifications {
+    display: block;
+    border: 0px solid #fff;
+    background-color: #fff;
+    color: #000000;
     padding: 10px;
-    border: 1px solid #007BFF;
+    text-align: left;
     border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
+    
 }
 
-.link-container:hover {
-    background-color: #0056b3;
+.link-container a {
+    text-decoration: none;
+    color: #000000;
 }
+.certifications:hover, .link-container:hover a {
+    transition: background-color 0.4s;
+    background-color: #0056b3;
+    color: #ffffff;
+
+}
+
+
+/* .link-container {
+    display: block; /* Make the entire container clickable */
+    /*border: 0px solid #fff;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove the default link underline */
+/*}*/
+
+/*.link-container:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transition: background-color 0.4s;
+} */
