@@ -42,9 +42,9 @@ body {
 
 .contact-links a {
     font-size: 14px;
-    font:inset 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a small internal shadow */
+    box-shadow:inset 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a small internal shadow */
     display: inline-block;
-    padding: 10px 20px; /* Adjust the padding as needed for spacing */
+    padding: 6px 20px; /* Adjust the padding as needed for spacing */
     margin: 0 10px; /* Add margin for spacing between buttons */
     background-color: #0056b3; /* Your desired button background color */
     color: #ffffff; /* Text color */
@@ -134,7 +134,7 @@ body {
 .skill-bar {
     background-color: #e2e2e2;
     border: 1px solid transparent;
-    width: 150px;
+    width: 200px;
     display: flex;
     align-items: center;
 }
@@ -150,7 +150,7 @@ body {
 }
 
 .education-table th, td {
-    width:150px;
+    width:200px;
     border: none; /* Remove borders from table cells */
     padding: 1px; /* Add padding to table cells for spacing */
     text-align: left;
@@ -166,6 +166,19 @@ body {
     padding: 1px; /* Add padding to table cells for spacing */
     text-align: left;
 }
+
+/* For the Education Table */
+.education-table td:nth-child(2),
+.education-table th:nth-child(2) {
+    width: 70%; /* Adjust the width to your preference */
+}
+
+/* For the Experience Table */
+.experience-table td:nth-child(2),
+.experience-table th:nth-child(2) {
+    width: 70%; /* Adjust the width to your preference */
+}
+
 
 .certifications {
     display: block;
