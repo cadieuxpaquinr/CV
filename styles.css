@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.name {
+    flex: 1;
+    border: 1px solid transparent;
+    font-size: 5%; /* Default font size as a percentage */
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 4%; /* Adjust font size for screens with a width up to 768px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 3%; /* Adjust font size for screens with a width up to 480px */
+    }
+}
+
+
+.contact-links {
+    flex: 1;
+    border: 1px solid transparent;
+    font-size: 14px;
+}
+
+.contact {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.introduction,
+.education,
+.certifications,
+.experience,
+.skills {
+    margin: 20px 0;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.introduction:hover,
+.education:hover,
+.certifications:hover,
+.experience:hover,
+.subsection:hover,
+.skill-bar:hover {
+    transform: scale(1.1) translate(5%, -10%);
+    transition: transform 0.3s;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid transparent;
+    margin: 0;
+}
+
+.subsection {
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border: 1px solid transparent;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-fill {
+    background-color: #0b466c;
+    height: 10px;
+}
