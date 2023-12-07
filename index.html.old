@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Raphaël Cadieux-Paquin - CV</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">
+                <div class="title">Raphaël Cadieux-Paquin</div>
+                <div class="contact-links-container">
+                <div class="contact-links"><a href="https://www.linkedin.com/in/raphael-cadieux-paquin/">Linkedin</a> <a
+                        href="https://github.com/cadieuxpaquinr">GitHub</a></div>
+            </div>
+        </div>
+        
+            <div class="contact">
+                <br>
+                (514) 550-5635<br>
+                <a href="mailto:cadieuxpaquin.r@gmail.com">cadieuxpaquin.r@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="introduction">
+            <div class="title"></div>
+            <div>
+                <p><b>THIS WEBSITE IS A WORK IN PROGRESS: WHAT YOU SEE NOW DOES NOT REFLECT FINAL PAGE</b></p>
+            </div>
+            <p>Je suis passionné par la technologie, les ordinateurs et la culture de l’internet. Je suis étudiant
+                universitaire en informatique et j’aimerais trouver un emploi à temps partiel dans une entreprise
+                dynamique.</p>
+            <p>I have a deep enthusiasm for technology, computers, and internet culture. I'm currently pursuing a degree
+                in computer science at the Université du Québec à Montréal and I would like to find a part-time job in a
+                dynamic company.</p>
+        </div>
+
+        <div class="education">
+            <div class="title">Education</div>
+            <table class="education-table">
+                <tr>
+                    <td>September 2023 - Now</td>
+                    <td><b>Computer Science</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Université du Québec à Montréal</td>
+                </tr>
+                <tr>
+                    <td>February 2022 - June 2023</td>
+                    <td><b>IOT Specialist Attestations of Collegial Studies</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bois-de-Boulogne College, Montreal, QC</td>
+                </tr>
+                <tr>
+                    <td>2019 - 2021</td>
+                    <td><b>Accounting and business management</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Rosemont College, Montreal, QC</td>
+                </tr>
+                <tr>
+                    <td>2012 - 2018</td>
+                    <td><b>High School Diploma, Montreal, QC</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Georges-Vanier High School, Montreal, QC</td>
+                </tr>
+            </table>
+        </div>
+        <div class="link-container">
+            <a href="https://www.credly.com/badges/f1af0ad2-b493-466d-b01f-90030d66686e/">
+                <div class="certifications">
+                    <div class="title">Certifications</div>
+                    <div><b><div class="g">G</div><div class="o1">o</div><div class="o2">o</div><div class="g">g</div><div class="l">l</div><div class="e">e</div>
+                         Cybersecurity Certificate</b> obtained on August 02, 2023</div>
+                </div>
+            </a>
+        </div>
+        
+        
+
+        <div class="experience">
+            <div class="title">Experience</div>
+            <table class="experience-table">
+                <tr>
+                    <td><b>Buspas Inc.</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>June '23 - September '23</td>
+                    <td><b><u>Junior Embedded Systems Specialist</u></b></td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Module and library development, network configuration, team support tasks, documentation, programming in remote VM and devices</td>
+                </tr>
+                <tr>
+                    <td>May '23 - June '23</td>
+                    <td><b><u>Intern</u></b></td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Supporting team with development tasks</td>
+                </tr>
+                <tr>
+                    <td><b>Canada Post</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>September '21 - February '22</td>
+                    <td><b><u>Post Office clerk</u></b> </td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Customer service, data entry, fraud prevention</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="skills">
+            <div class="title">Skills</div>
+            <div class="subsection">
+                <div class="sub-title">Languages</div>
+                <div class="skill">
+                    <div class="skill-name">French</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">English</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Writing</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="sub-title">Office skills</div>
+                <div class="skill">
+                    <div class="skill-name">Microsoft Word, PowerPoint, Excel</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Office 365, Azure DevOps</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Windows, Ubuntu Linux, headless Debian based Linux</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Document redaction (technical and non-technical)</div>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="sub-title">Technical</div>
+                <div class="skill">
+                    <div class="skill-name">Version Control (Git, GitHub, etc.)</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C/C++</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 37%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 43%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Bash</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">PowerShell</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Web development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+</body>
+
+</html>

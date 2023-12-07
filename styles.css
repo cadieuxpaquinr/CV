@@ -1,197 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.name {
-    flex: 1;
+.container {  display: grid;
+    grid-template-columns: 1fr 1.5fr 1.2fr 0.3fr;
+    grid-template-rows: 0.5fr 0.2fr 2.8fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pageTitle pageTitle pageTitle also"
+      "menubar menubar menubar also"
+      "resume resume skills also"
+      "other other other also";
+  }
+  
+  .menubar {
+    grid-area: menubar;
+    background-color: #333;
+    color: white;
+    padding: 2px;
     text-align: center;
-    border: 1px solid transparent;
-    font-size: 5%; /* Default font size as a percentage */
+}
+.menu-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
-    .name {
-        font-size: 4%; /* Adjust font size for screens with a width up to 768px */
-    }
+.menu-button:hover {
+    background-color: #555;
+}
+  .skills { 
+    grid-area: skills;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
 }
 
-@media screen and (max-width: 480px) {
-    .name {
-        font-size: 3%; /* Adjust font size for screens with a width up to 480px */
-    }
-}
-/* Style the contact links as buttons */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    
+  .resume {
+    grid-area: resume;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-.contact-links a {
-    font-size: 14px;
-    box-shadow:inset 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a small internal shadow */
-    display: inline-block;
-    padding: 6px 20px; /* Adjust the padding as needed for spacing */
-    margin: 0 10px; /* Add margin for spacing between buttons */
-    background-color: #0056b3; /* Your desired button background color */
-    color: #ffffff; /* Text color */
-    text-decoration: none; /* Remove underline from links */
-    border: none; /* Remove button border if desired */
-    border-radius: 5px; /* Rounded corners */
-    
-}
-
-/* Add a hover effect for the buttons */
-.contact-links a:hover {
-    background-color: #003f80; /* Darker color on hover */
-}
-
-
-
-
-.contact {
-    flex: 1;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid transparent;
-}
-
-.introduction,
-.education,
-.certifications,
-.experience,
-.skills {
-    margin: 20px 0;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    padding: 10px;
-}
-
-.education:hover,
-.experience:hover,
-.subsection:hover {
-    transform: scale(1.1) translate(5%, -10%);
-    transition: transform 0.3s;
-    /* transition: border 1s; */
-    border-color: #000000;
-    /* border: 4px solid black; */
-    background-color: #fff;
-}
-.skill-bar:hover {
-    transform: scale(1.5) translate(-20%, -10%);
-    transition: transform 0.3s;
-    background-color: #000000;
-}
-.skill-bar:hover .skill-fill {
-    background-color: #2100f8; /* Change this to your desired color */
-}
-/* REALLY BAD CODE */
-.skill-bar {
-    /* background: linear-gradient(to right, rgb(0, 119, 254), rgb(255, 255, 255)); Gradient colors */
-    border: 1px solid transparent;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    height: 10px;
-}
-
-.skill-fill {
-    background: linear-gradient(to right, rgb(0, 68, 255), rgb(8, 0, 119)); /* Gradient colors */
-    height: 100%;
-    width: 0;
-    transition: width 1s; /* Add a transition for smooth fill animation */
-}
-/* REALLY BAD CODE */
-
-.title {
-    font-weight: bold;
+  
+  .pageTitle {
+    grid-area: pageTitle;
+    text-align: center;
     font-size: 24px;
-    border: 1px solid transparent;
-    margin: 0;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.subsection {
-    border: 1px solid transparent;
+  
+   .also {
+    grid-area: also;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+  
+.other {
+    grid-area: other;
     padding: 10px;
-    border-radius: 25px;
-}
-
-.sub-title {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.skill {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    
-}
-
-.skill-name {
-    font-weight: bold;
-    flex: 1;
-}
-
-.skill-bar {
-    background-color: #e2e2e2;
-    border: 1px solid transparent;
-    width: 200px;
-    display: flex;
-    align-items: center;
-}
-
-.skill-fill {
-    background-color: #0b466c;
-    height: 10px;
-}
-
-.education-table {
-    width: 100%; /* Set the table width to 100% of its container */
-    border-collapse: collapse; /* Remove space between table cells */
-}
-
-.education-table th, td {
-    width:200px;
-    border: none; /* Remove borders from table cells */
-    padding: 1px; /* Add padding to table cells for spacing */
-    text-align: left;
-}
-
-.experience-table {
-    width: 100%; /* Set the table width to 100% of its container */
-    border-collapse: collapse; /* Remove space between table cells */
-}
-.experience-table th, td {
-    width:150px;
-    border: none; /* Remove borders from table cells */
-    padding: 1px; /* Add padding to table cells for spacing */
-    text-align: left;
-}
-
-/* For the Education Table */
-.education-table td:nth-child(2),
-.education-table th:nth-child(2) {
-    width: 70%; /* Adjust the width to your preference */
-}
-
-/* For the Experience Table */
-.experience-table td:nth-child(2),
-.experience-table th:nth-child(2) {
-    width: 70%; /* Adjust the width to your preference */
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 
@@ -237,20 +113,37 @@ body {
     color: #ea4335;
 }
 
-/* .link-container {
-    display: block; /* Make the entire container clickable */
-    /*border: 0px solid #fff;
-    background-color: #fff;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    text-decoration: none; /* Remove the default link underline */
-/*}*/
+.education-table {
+    width: 100%; /* Set the table width to 100% of its container */
+    border-collapse: collapse; /* Remove space between table cells */
+}
 
-/*.link-container:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-    transition: background-color 0.4s;
-} */
+.education-table th, td {
+    width:200px;
+    border: none; /* Remove borders from table cells */
+    padding: 1px; /* Add padding to table cells for spacing */
+    text-align: left;
+}
+
+.experience-table {
+    width: 100%; /* Set the table width to 100% of its container */
+    border-collapse: collapse; /* Remove space between table cells */
+}
+.experience-table th, td {
+    width:150px;
+    border: none; /* Remove borders from table cells */
+    padding: 1px; /* Add padding to table cells for spacing */
+    text-align: left;
+}
+
+/* For the Education Table */
+.education-table td:nth-child(2),
+.education-table th:nth-child(2) {
+    width: 70%; /* Adjust the width to your preference */
+}
+
+/* For the Experience Table */
+.experience-table td:nth-child(2),
+.experience-table th:nth-child(2) {
+    width: 70%; /* Adjust the width to your preference */
+}
