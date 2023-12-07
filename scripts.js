@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (isMobileDevice()) {
+        alert("Detected mobile!")
         window.location.replace('./mobile.html');
     }
 });
