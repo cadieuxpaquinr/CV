@@ -20,3 +20,13 @@ document.getElementById('frenchBtn').addEventListener('click', function() {
     alert('French button clicked!');
     // Add your logic or page navigation code here
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    if (isMobileDevice()) {
+        window.location.href = 'mobile.html';
+    }
+});
