@@ -1,6 +1,5 @@
 document.getElementById('homeBtn').addEventListener('click', function() {
     alert('Home button clicked!');
-    // Add your logic or page navigation code here
 });
 
 document.getElementById('projectsBtn').addEventListener('click', function() {
@@ -9,7 +8,6 @@ document.getElementById('projectsBtn').addEventListener('click', function() {
 
 document.getElementById('aboutMeBtn').addEventListener('click', function() {
     alert('About me button clicked!');
-    // Add your logic or page navigation code here
 });
 
 document.getElementById('contactBtn').addEventListener('click', function() {
@@ -18,7 +16,12 @@ document.getElementById('contactBtn').addEventListener('click', function() {
 
 document.getElementById('frenchBtn').addEventListener('click', function() {
     alert('French button clicked!');
-    // Add your logic or page navigation code here
+});
+
+document.getElementById('mobileBtn').addEventListener('click', function() {
+    window.location.href = 'mobile.html';
+    alert('French button clicked!');
+    
 });
 
 document.addEventListener('DOMContentLoaded', function() {
