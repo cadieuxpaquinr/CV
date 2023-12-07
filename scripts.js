@@ -20,16 +20,15 @@ document.getElementById('frenchBtn').addEventListener('click', function() {
 
 document.getElementById('mobileBtn').addEventListener('click', function() {
     window.location.href = './mobile.html';
-    alert('French button clicked!');
     
 });
 
 document.addEventListener('DOMContentLoaded', function() {
     function isMobileDevice() {
-        return window.innerWidth <= 800 && window.innerHeight <= 1000;
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
     if (isMobileDevice()) {
-        window.location.href = './mobile.html';
+        window.location.replace = './mobile.html';
     }
 });
