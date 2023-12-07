@@ -4,7 +4,6 @@ document.getElementById('homeBtn').addEventListener('click', function() {
 });
 
 document.getElementById('projectsBtn').addEventListener('click', function() {
-    alert('Projects button clicked!');
     window.open("https://github.com/cadieuxpaquinr");
 });
 
@@ -14,7 +13,6 @@ document.getElementById('aboutMeBtn').addEventListener('click', function() {
 });
 
 document.getElementById('contactBtn').addEventListener('click', function() {
-    alert('Contact me button clicked!');
     window.open("https://www.linkedin.com/in/raphael-cadieux-paquin/");
 });
 
