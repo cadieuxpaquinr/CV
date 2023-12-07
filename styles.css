@@ -147,3 +147,72 @@
 .experience-table th:nth-child(2) {
     width: 70%; /* Adjust the width to your preference */
 }
+
+.skill-bar:hover {
+    transform: scale(1.5) translate(-20%, -10%);
+    transition: transform 0.3s;
+    background-color: #000000;
+}
+.skill-bar:hover .skill-fill {
+    background-color: #2100f8; /* Change this to your desired color */
+}
+/* REALLY BAD CODE */
+.skill-bar {
+    /* background: linear-gradient(to right, rgb(0, 119, 254), rgb(255, 255, 255)); Gradient colors */
+    border: 1px solid transparent;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+.skill-fill {
+    background: linear-gradient(to right, rgb(0, 68, 255), rgb(8, 0, 119)); /* Gradient colors */
+    height: 100%;
+    width: 0;
+    transition: width 1s; /* Add a transition for smooth fill animation */
+}
+/* REALLY BAD CODE */
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid transparent;
+    margin: 0;
+}
+
+.subsection {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+
+.skill-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.skill-bar {
+    background-color: #e2e2e2;
+    border: 1px solid transparent;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-fill {
+    background-color: #0b466c;
+    height: 10px;
+}
