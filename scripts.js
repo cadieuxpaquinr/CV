@@ -42,6 +42,7 @@ window.mobileCheck = function() {
 
 window.addEventListener('DOMContentLoaded', function() {
     if (window.mobileCheck()) {
+        this.alert("You are on mobile");
         // window.location.replace('./mobile.html');
         window.location.href = './mobile.html';
     }
