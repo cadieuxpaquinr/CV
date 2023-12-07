@@ -43,7 +43,7 @@ window.mobileCheck = function() {
 
   document.addEventListener('DOMContentLoaded', function() {
     if (window.mobileCheck()) {
-        window.location.replace('./mobile.html');
+        // window.location.replace('./mobile.html');
         window.location.href = './mobile.html';
     }
 });
