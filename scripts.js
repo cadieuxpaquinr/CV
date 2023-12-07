@@ -5,7 +5,7 @@ document.getElementById('homeBtn').addEventListener('click', function() {
 
 document.getElementById('projectsBtn').addEventListener('click', function() {
     alert('Projects button clicked!');
-    // Add your logic or page navigation code here
+    window.open("https://github.com/cadieuxpaquinr");
 });
 
 document.getElementById('aboutMeBtn').addEventListener('click', function() {
@@ -15,7 +15,7 @@ document.getElementById('aboutMeBtn').addEventListener('click', function() {
 
 document.getElementById('contactBtn').addEventListener('click', function() {
     alert('Contact me button clicked!');
-    // Add your logic or page navigation code here
+    window.open("https://www.linkedin.com/in/raphael-cadieux-paquin/");
 });
 
 document.getElementById('frenchBtn').addEventListener('click', function() {
