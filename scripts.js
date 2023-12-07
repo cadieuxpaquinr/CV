@@ -20,6 +20,7 @@ document.getElementById('frenchBtn').addEventListener('click', function() {
 
 document.getElementById('mobileBtn').addEventListener('click', function() {
     window.location.href = './mobile.html';
+    alert('MOBILE WEBSITE!');
     
 });
 
