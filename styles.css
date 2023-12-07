@@ -170,6 +170,7 @@
     height: 100%;
     width: 0;
     transition: width 1s;
+}
 
 .title {
     font-weight: bold;
@@ -202,7 +203,7 @@
 }
 
 .skill-bar {
-    background-color: #e2e2e2;
+    background-color: #a19e9e;
     border: 1px solid transparent;
     width: 200px;
     display: flex;
