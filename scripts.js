@@ -29,6 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (isMobileDevice()) {
-        window.location.replace = './mobile.html';
+        window.location.replace('./mobile.html');
     }
 });
