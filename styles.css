@@ -211,3 +211,7 @@
     display: flex;
     align-items: center;
 }
+
+.line-break {
+    white-space: pre-line;
+}
