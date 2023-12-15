@@ -1,9 +1,3 @@
-import * as PIXI from 'https://cdn.skypack.dev/pixi.js';
-import { KawaseBlurFilter } from 'https://cdn.skypack.dev/@pixi/filter-kawase-blur';
-import SimplexNoise from 'https://cdn.skypack.dev/simplex-noise';
-import hsl from 'https://cdn.skypack.dev/hsl-to-hex';
-import debounce from 'https://cdn.skypack.dev/debounce';
-
 document.getElementById('homeBtn').addEventListener('click', function() {
     alert('Home button clicked!');
 });
@@ -25,7 +19,7 @@ document.getElementById('frenchBtn').addEventListener('click', function() {
 });
 
 document.getElementById('mobileBtn').addEventListener('click', function() {
-    window.location.href = './mobile.html';
+    window.location.href = './index_test.html';
     
 });
 
