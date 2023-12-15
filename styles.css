@@ -51,7 +51,8 @@
   .pageTitle {
     grid-area: pageTitle;
     text-align: center;
-    font-size: 24px;
+    font-size: 50px;
+    letter-spacing: 1px;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 50px;
